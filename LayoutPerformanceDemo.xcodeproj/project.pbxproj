@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		7D75B29D25836A4700F82899 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D75B29B25836A4700F82899 /* Main.storyboard */; };
 		7D75B29F25836A4900F82899 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D75B29E25836A4900F82899 /* Assets.xcassets */; };
 		7D75B2A225836A4900F82899 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D75B2A025836A4900F82899 /* LaunchScreen.storyboard */; };
+		7D75B2AC2583C3E400F82899 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 7D75B2AB2583C3E400F82899 /* Then */; };
+		7D75B2B02583C47000F82899 /* Cartography in Frameworks */ = {isa = PBXBuildFile; productRef = 7D75B2AF2583C47000F82899 /* Cartography */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D75B2AC2583C3E400F82899 /* Then in Frameworks */,
+				7D75B2B02583C47000F82899 /* Cartography in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +87,10 @@
 			dependencies = (
 			);
 			name = LayoutPerformanceDemo;
+			packageProductDependencies = (
+				7D75B2AB2583C3E400F82899 /* Then */,
+				7D75B2AF2583C47000F82899 /* Cartography */,
+			);
 			productName = LayoutPerformanceDemo;
 			productReference = 7D75B29225836A4700F82899 /* LayoutPerformanceDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +118,10 @@
 				Base,
 			);
 			mainGroup = 7D75B28925836A4700F82899;
+			packageReferences = (
+				7D75B2AA2583C3E400F82899 /* XCRemoteSwiftPackageReference "Then" */,
+				7D75B2AE2583C47000F82899 /* XCRemoteSwiftPackageReference "Cartography" */,
+			);
 			productRefGroup = 7D75B29325836A4700F82899 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +353,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7D75B2AA2583C3E400F82899 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:devxoul/Then.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.0;
+			};
+		};
+		7D75B2AE2583C47000F82899 /* XCRemoteSwiftPackageReference "Cartography" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:robb/Cartography.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7D75B2AB2583C3E400F82899 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D75B2AA2583C3E400F82899 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		7D75B2AF2583C47000F82899 /* Cartography */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D75B2AE2583C47000F82899 /* XCRemoteSwiftPackageReference "Cartography" */;
+			productName = Cartography;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7D75B28A25836A4700F82899 /* Project object */;
 }
