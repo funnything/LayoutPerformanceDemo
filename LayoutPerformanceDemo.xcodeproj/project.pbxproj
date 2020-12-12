@@ -81,6 +81,7 @@
 				7D75B28E25836A4700F82899 /* Sources */,
 				7D75B28F25836A4700F82899 /* Frameworks */,
 				7D75B29025836A4700F82899 /* Resources */,
+				7D8AE41A25850ADA002A6389 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -143,6 +144,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D8AE41A25850ADA002A6389 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mint run swiftlint\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7D75B28E25836A4700F82899 /* Sources */ = {
