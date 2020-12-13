@@ -12,7 +12,7 @@ class ManualLayoutViewController: UIViewController {
 
     override func loadView() {
         super.loadView()
-        
+
         stopwatch = Stopwatch()
 
         view.backgroundColor = .systemBackground

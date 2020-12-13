@@ -31,7 +31,7 @@ class AutoLayoutViewController: UIViewController {
 
     override func loadView() {
         super.loadView()
-        
+
         stopwatch = Stopwatch()
 
         view.backgroundColor = .systemBackground
@@ -65,7 +65,7 @@ class AutoLayoutViewController: UIViewController {
         super.viewDidLayoutSubviews()
         stopwatch!.split()
     }
-    
+
     func constructYearView(_ year: Int) -> UIView {
         let v = vstack(spacing: 25)
 
