@@ -38,4 +38,10 @@ class ViewController: UIViewController {
             stack.addArrangedSubview($0)
         }
     }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        title = "🎄"
+    }
 }
