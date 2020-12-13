@@ -5,8 +5,6 @@
 //  Created by Yosaku Toyama on 2020/12/13.
 //
 
-import Foundation
-
 extension Int {
     var times: Range<Int> { 0..<self }
 
