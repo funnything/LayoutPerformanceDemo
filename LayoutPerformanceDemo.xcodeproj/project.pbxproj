@@ -11,8 +11,14 @@
 		7D75B29A25836A4700F82899 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75B29925836A4700F82899 /* ViewController.swift */; };
 		7D75B29F25836A4900F82899 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D75B29E25836A4900F82899 /* Assets.xcassets */; };
 		7D75B2A225836A4900F82899 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D75B2A025836A4900F82899 /* LaunchScreen.storyboard */; };
-		7D75B2AC2583C3E400F82899 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 7D75B2AB2583C3E400F82899 /* Then */; };
-		7D75B2B02583C47000F82899 /* Cartography in Frameworks */ = {isa = PBXBuildFile; productRef = 7D75B2AF2583C47000F82899 /* Cartography */; };
+		7D75B2AC2583C3E400F82899 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 7D75B2AB2583C3E400F82899 /* SwiftPackageProductDependency */; };
+		7D75B2B02583C47000F82899 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 7D75B2AF2583C47000F82899 /* SwiftPackageProductDependency */; };
+		7DF989B6258513E100DC626E /* ViewProxy+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF989B5258513E100DC626E /* ViewProxy+Ex.swift */; };
+		7DF989B9258651C600DC626E /* AutoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF989B8258651C600DC626E /* AutoLayoutViewController.swift */; };
+		7DF989BC2586521300DC626E /* SimpleDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF989BB2586521300DC626E /* SimpleDate.swift */; };
+		7DF989BF258653E200DC626E /* Int+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF989BE258653E200DC626E /* Int+Ex.swift */; };
+		7DF989E42586550200DC626E /* ManualLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF989E32586550200DC626E /* ManualLayoutViewController.swift */; };
+		7DF98A1425865E7F00DC626E /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF98A1325865E7F00DC626E /* Stopwatch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		7D75B29E25836A4900F82899 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D75B2A125836A4900F82899 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D75B2A325836A4900F82899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DF989B5258513E100DC626E /* ViewProxy+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewProxy+Ex.swift"; sourceTree = "<group>"; };
+		7DF989B8258651C600DC626E /* AutoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutViewController.swift; sourceTree = "<group>"; };
+		7DF989BB2586521300DC626E /* SimpleDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDate.swift; sourceTree = "<group>"; };
+		7DF989BE258653E200DC626E /* Int+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Ex.swift"; sourceTree = "<group>"; };
+		7DF989E32586550200DC626E /* ManualLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualLayoutViewController.swift; sourceTree = "<group>"; };
+		7DF98A1325865E7F00DC626E /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,8 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D75B2AC2583C3E400F82899 /* Then in Frameworks */,
-				7D75B2B02583C47000F82899 /* Cartography in Frameworks */,
+				7D75B2AC2583C3E400F82899 /* BuildFile in Frameworks */,
+				7D75B2B02583C47000F82899 /* BuildFile in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +70,15 @@
 			children = (
 				7D75B29525836A4700F82899 /* AppDelegate.swift */,
 				7D75B29E25836A4900F82899 /* Assets.xcassets */,
+				7DF989B8258651C600DC626E /* AutoLayoutViewController.swift */,
 				7D75B2A325836A4900F82899 /* Info.plist */,
+				7DF989BE258653E200DC626E /* Int+Ex.swift */,
 				7D75B2A025836A4900F82899 /* LaunchScreen.storyboard */,
+				7DF989E32586550200DC626E /* ManualLayoutViewController.swift */,
+				7DF989BB2586521300DC626E /* SimpleDate.swift */,
+				7DF98A1325865E7F00DC626E /* Stopwatch.swift */,
 				7D75B29925836A4700F82899 /* ViewController.swift */,
+				7DF989B5258513E100DC626E /* ViewProxy+Ex.swift */,
 			);
 			path = LayoutPerformanceDemo;
 			sourceTree = "<group>";
@@ -83,8 +101,8 @@
 			);
 			name = LayoutPerformanceDemo;
 			packageProductDependencies = (
-				7D75B2AB2583C3E400F82899 /* Then */,
-				7D75B2AF2583C47000F82899 /* Cartography */,
+				7D75B2AB2583C3E400F82899 /* SwiftPackageProductDependency */,
+				7D75B2AF2583C47000F82899 /* SwiftPackageProductDependency */,
 			);
 			productName = LayoutPerformanceDemo;
 			productReference = 7D75B29225836A4700F82899 /* LayoutPerformanceDemo.app */;
@@ -114,8 +132,8 @@
 			);
 			mainGroup = 7D75B28925836A4700F82899;
 			packageReferences = (
-				7D75B2AA2583C3E400F82899 /* XCRemoteSwiftPackageReference "Then" */,
-				7D75B2AE2583C47000F82899 /* XCRemoteSwiftPackageReference "Cartography" */,
+				7D75B2AA2583C3E400F82899 /* RemoteSwiftPackageReference */,
+				7D75B2AE2583C47000F82899 /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = 7D75B29325836A4700F82899 /* Products */;
 			projectDirPath = "";
@@ -164,8 +182,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DF989BC2586521300DC626E /* SimpleDate.swift in Sources */,
 				7D75B29A25836A4700F82899 /* ViewController.swift in Sources */,
+				7DF989BF258653E200DC626E /* Int+Ex.swift in Sources */,
+				7DF989E42586550200DC626E /* ManualLayoutViewController.swift in Sources */,
 				7D75B29625836A4700F82899 /* AppDelegate.swift in Sources */,
+				7DF989B6258513E100DC626E /* ViewProxy+Ex.swift in Sources */,
+				7DF989B9258651C600DC626E /* AutoLayoutViewController.swift in Sources */,
+				7DF98A1425865E7F00DC626E /* Stopwatch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,7 +386,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7D75B2AA2583C3E400F82899 /* XCRemoteSwiftPackageReference "Then" */ = {
+		7D75B2AA2583C3E400F82899 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:devxoul/Then.git";
 			requirement = {
@@ -370,7 +394,7 @@
 				minimumVersion = 2.7.0;
 			};
 		};
-		7D75B2AE2583C47000F82899 /* XCRemoteSwiftPackageReference "Cartography" */ = {
+		7D75B2AE2583C47000F82899 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:robb/Cartography.git";
 			requirement = {
@@ -381,14 +405,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7D75B2AB2583C3E400F82899 /* Then */ = {
+		7D75B2AB2583C3E400F82899 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7D75B2AA2583C3E400F82899 /* XCRemoteSwiftPackageReference "Then" */;
+			package = 7D75B2AA2583C3E400F82899 /* RemoteSwiftPackageReference */;
 			productName = Then;
 		};
-		7D75B2AF2583C47000F82899 /* Cartography */ = {
+		7D75B2AF2583C47000F82899 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7D75B2AE2583C47000F82899 /* XCRemoteSwiftPackageReference "Cartography" */;
+			package = 7D75B2AE2583C47000F82899 /* RemoteSwiftPackageReference */;
 			productName = Cartography;
 		};
 /* End XCSwiftPackageProductDependency section */
